@@ -39,7 +39,11 @@ importers:
         specifier: ^8.32.1
         version: 8.32.1(eslint@9.26.0)(typescript@5.8.3)
 
-  packages/core: {}
+  packages/commons:
+    dependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
 
   packages/errors:
     dependencies:
