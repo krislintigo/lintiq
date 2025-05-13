@@ -1,0 +1,53 @@
+{
+  "name": "@lintiq/errors",
+  "description": "Common error types for Lintiq apps",
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://playbackart.lintigo.site",
+  "main": "dist/",
+  "types": "dist/",
+  "keywords": [
+    "lintiq"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/krislintigo/lintiq.git",
+    "directory": "packages/errors"
+  },
+  "author": {
+    "name": "krislintigo",
+    "email": "krislintigo@gmail.com",
+    "url": "https://playbackart.lintigo.site"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/krislintigo/lintiq/issues"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "pack": "npm pack --pack-destination ../generators/test/build",
+    "build": "shx rm -rf lib/ && tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "src/**",
+    "dist/**",
+    "*.d.ts",
+    "*.js"
+  ],
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
