@@ -1,7 +1,7 @@
 {
   "name": "@lintiq/errors",
   "description": "Common error types for Lintiq apps",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "homepage": "https://playbackart.lintigo.site",
   "main": "dist/",
@@ -28,12 +28,12 @@
     "node": ">= 20"
   },
   "directories": {
-    "lib": "lib"
+    "lib": "dist"
   },
   "scripts": {
     "prepublish": "npm run build",
     "pack": "npm pack --pack-destination ../generators/test/build",
-    "build": "shx rm -rf lib/ && tsc"
+    "build": "shx rm -rf dist/ && tsc"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,0 @@
----
-'@lintiq/errors': patch
----
-
-test
